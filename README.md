@@ -11,7 +11,9 @@ script src="js/jquery.js"
 
 Then you must to set the id of the items in the index.php, like inputs, buttons, div, ect.
 
-*input type="text" id="name"*
+```html
+<input type="text" id="name">
+```
 
 After set the code in script.js, you should get the value of input
 
