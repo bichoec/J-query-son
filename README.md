@@ -5,7 +5,9 @@ This is a simple example that you can get a message "Hello" concat with your nam
 
 First you need to add the references to jquery.js and a script that contain the functions to work with the data (script.js) in your index.php
 
-*script src="js/jquery.js"*
+```javascript
+script src="js/jquery.js"
+```
 
 Then you must to set the id of the items in the index.php, like inputs, buttons, div, ect.
 
@@ -13,29 +15,41 @@ Then you must to set the id of the items in the index.php, like inputs, buttons,
 
 After set the code in script.js, you should get the value of input
 
-*var name=$("#name").val();*
+```javascript
+var name=$("#name").val();
+```
 
 Using ajax to make call to data_process.php always with POST
 
-*$.ajax({*
-*type:"post",*
-*url:"data_process.php",*
+```javascript
+$.ajax({
+	type:"post",
+	url:"data_process.php",
+```
 
 The value of the input to send
 
-*data:"name="+name,*
+```javascript
+data:"name="+name,
+```
 
 The data type to JSON because our message will be encoded in JSON
 
-*dataType:"JSON",*
+```javascript
+dataType:"JSON",
+```
 
 On succes function you set in the div with id "message" the data encoded in JSON. Don´t forget to acces to key in the encoded array and you get 
 something like this:
 
-*encoded array {"Name": "Hello Name of Input"}*
+```php
+encoded array {"Name": "Hello Name of Input"}
+```
 
 Your key is "Name" and you can get the value like this
 
-*$("#message").html(result.Name);*
+```javascript
+$("#message").html(result.Name);
+```
 
 Try to add some items to your array. (Y)
