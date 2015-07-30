@@ -5,13 +5,11 @@ This is a simple example that you can get a message "Hello" concat with your nam
 
 First you need to add the references to jquery.js and a script that contain the functions to work with the data (script.js) in your index.php
 
-*script src="js/jquery.js">*
-*script src="js/script.js">*
+*script src="js/jquery.js">* 
 
 Then you must to set the id of the items in the index.php, like inputs, buttons, div, ect.
 
 *input type="text" id="name"*
-*div id="message">*
 
 After set the code in script.js, you should get the value of input
 
